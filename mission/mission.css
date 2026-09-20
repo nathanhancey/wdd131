@@ -27,3 +27,10 @@ ol {
 #italics {
     font-style: italic;
 }
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    margin-top: 20px;
+}
