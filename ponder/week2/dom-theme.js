@@ -12,8 +12,10 @@ function nameOfFunction(name) {
 // Call or "Invoke" the function
 nameOfFunction("nameOfFunction");
 
+// Grab all of the page content we want to change the theme of
 let pageContent = document.querySelector('body');
 
+// Copied code from the assignment.
 function changeTheme() {
     let current = select.value;
     if (current === 'ocean') {
@@ -41,8 +43,7 @@ function changeTheme() {
     // 2. Register an event listenter.
     select.addEventListener('change', changeTheme);
 
-
-
-
-
 // 3. If Statements
+    // If statements allow us to choose differnt code to run based on a condition. The condition is always a boolean (true or false).
+
+    // Else if instead of elif (pyhton).
