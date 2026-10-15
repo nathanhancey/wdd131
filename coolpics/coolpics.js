@@ -37,7 +37,7 @@ dialog.addEventListener("click", function(event) {
 menuBtn.addEventListener('click', function() {
     menuBtn.classList.toggle('change');
 
-    /* display the menu and make sure the items apear in the middle */
+    // display the menu and make sure the items apear in the middle
     nav.forEach(function(link) {
         link.style.display = link.style.display === 'block' ? 'none' : 'block';
         link.style.textAlign = 'center';
