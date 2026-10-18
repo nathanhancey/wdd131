@@ -15,9 +15,6 @@ header, footer {
     list-style: none;
     padding: 0;
 }
-.main-nav li {
-    padding: 8px;
-}
 .main-nav a {
     color: #ffc107;
     text-decoration: none;
