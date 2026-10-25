@@ -33,55 +33,55 @@ main {
 }
 
 /* Setup the grid for the section content */
-section {
+.article-section {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, auto);
     gap: 0.25rem;
     padding-top: 1rem;
 }
-.bar {
+.article-section .bar {
     height: 1px;
     background-color: rgb(201, 201, 59);
     grid-row: 1 / 2;
 }
-section p {
+.article-section p {
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
 }
-section p:nth-child(-n+4) {
+.article-section p:nth-child(-n+4) {
     display: flex;
     justify-content: flex-end;
 }
-section h2 {
+.article-section h2 {
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
     grid-row: 6 / 7;
     color:rgb(133, 13, 59);
 }
-section img {
+.article-section img {
     width: 40%;
     height: auto;
     grid-row: 7 / 8;
-    justify-content: center;
+    justify-self: center;
 }
-section .recommendation {
+.article-section .recommendation {
     grid-row: 8 / 9;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 600px) {
-    section {
+    .article-section {
         grid-template-columns: 1fr auto 1fr;
         grid-template-rows: auto auto auto auto auto;
         align-items: start;
     }
-    section p {
+    .article-section p {
         grid-column: 1 / 2;
         text-align: right;
     }
-    .bar {
+    .article-section .bar {
         grid-column: 2 / 3;
         grid-row: 1 / 6;
         width: 1px;
@@ -89,19 +89,19 @@ section .recommendation {
         background-color: rgb(201, 201, 59);
         justify-self: center;
     }
-    section h2 {
+    .article-section h2 {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
     }
 
-    section img {
+    .article-section img {
         grid-column: 3 / 4;
         grid-row: 2 / 4;
         width: 40%;
         justify-self: center;
     }
 
-    section .recommendation {
+    .article-section .recommendation {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
     }
