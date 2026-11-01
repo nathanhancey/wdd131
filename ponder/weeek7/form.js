@@ -10,10 +10,7 @@ function updateNotesField() {
   const value = travelRange.value;
 
   // Show the travel notes on the form if they are choosing many campuses and require it
-  if(travelRange === "many") {
-    output.textContent = "Please select more than one campus.";
-    return;
-  }
+  
   
 }
 
