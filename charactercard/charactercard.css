@@ -4,8 +4,7 @@
 
 body {
     display: grid;
-    min-height: 100vh;
-    min-height: 100svh;
+    min-height: 700px;
     margin: 0;
     padding: 1rem;
     place-items: center;
@@ -15,11 +14,10 @@ body {
 }
 
 #character-card {
-    width: min(100%, 22rem);
+    width: min(100%, 600px);
     overflow: hidden;
-    border-radius: 0.75rem;
+    border-radius: 1rem;
     background-color: #777;
-    box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 20%);
 }
 
 #character-photo {
@@ -29,39 +27,39 @@ body {
     object-fit: cover;
 }
 
-.character-card__header {
-    padding: 1rem 1.25rem;
+.card-header {
+    padding: 1rem 1rem;
 }
 
-.character-card__header h1 {
+.card-header h1 {
     margin: 0;
-    font-size: 1.75rem;
+    font-size: 2rem;
 }
 
-.character-card__details {
-    padding: 0.5rem 1.25rem;
+.card-info {
+    padding: 0.5rem 1rem;
     background-color: #4a4a4a;
 }
 
-.character-card__details ul {
+.card-info ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.character-card__details li {
+.card-info li {
     display: flex;
     justify-content: space-between;
     padding: 0.55rem 0;
 }
 
-.character-card__actions {
+.card-buttons {
     display: flex;
     gap: 0.75rem;
     padding: 1rem 1.25rem;
 }
 
-.character-card__actions button {
+.card-buttons button {
     flex: 1;
     padding: 0.7rem 0.5rem;
     border: 0;
@@ -72,11 +70,11 @@ body {
     cursor: pointer;
 }
 
-.character-card__actions button:hover {
+.card-buttons button:hover {
     background-color: #929292;
 }
 
-.character-card__actions button:focus-visible {
+.card-buttons button:focus-visible {
     outline: 2px solid #fff;
     outline-offset: 3px;
 }
