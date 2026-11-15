@@ -44,7 +44,7 @@ justify-content: center;
   .gallery {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: 
+    justify-content: space-between;
   }
 
   .media-card {
